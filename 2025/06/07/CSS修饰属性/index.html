@@ -45,7 +45,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-06-07T11:29:11.000Z">
-<meta property="article:modified_time" content="2025-06-07T13:31:09.854Z">
+<meta property="article:modified_time" content="2025-06-12T13:37:02.594Z">
 <meta property="article:author" content="ZPQ">
 <meta property="article:tag" content="CSS修饰属性">
 <meta name="twitter:card" content="summary">
@@ -2113,7 +2113,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1749347512535),
+    lastupdate: new Date(1749735441617),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2835,6 +2835,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <ol>
 <li>鼠标悬停在元素上时指针显示样式</li>
 </ol>
+<h3 id="五-overflow-隐藏超出元素盒子范围的内容"><a href="#五-overflow-隐藏超出元素盒子范围的内容" class="headerlink" title="五. overflow:隐藏超出元素盒子范围的内容"></a>五. overflow:隐藏超出元素盒子范围的内容</h3><ol>
+<li><p>overflow: hidden; 的作用是隐藏超出元素盒子范围的内容，但它还有一个常用的副作用：可以触发 BFC（块级格式化上下文）。</p>
+</li>
+<li><p>在实际开发中，父元素如果只包含浮动子元素，父元素高度会塌陷（高度为0），这时给父元素加上 overflow: hidden;，就会触发 BFC，父元素会包裹住所有浮动子元素，从而防止高度塌陷。</p>
+</li>
+<li><p>总结：overflow: hidden; 触发了BFC，BFC可以让父元素自动包含内部的浮动元素，防止高度塌陷。</p>
+</li>
+</ol>
 
   </div>
   
@@ -2859,10 +2867,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-06-07T21:31:09+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-06-12T21:37:02+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jun 7, 2025</p>
+    <p>更新于：Jun 12, 2025</p>
   </a>
 </div>
 
@@ -2945,6 +2953,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
+        <a class='prev' href='/2025/06/08/%E8%BD%AE%E6%92%AD%E5%9B%BE/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>轮播图</p>
+          <p class='content'>轮播图效果
+轮播图的图片显示一般用ur嵌套li标签来装
+
+
+</p>
+        </a>
+      
       
         <a class='next' href='/2025/06/06/CSS%E7%B2%BE%E7%81%B5/'>
           <p class='title'>CSS精灵<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
@@ -3012,7 +3029,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%9E%82%E7%9B%B4%E5%AF%B9%E9%BD%90%E6%96%B9%E5%BC%8F%EF%BC%9Avertical-align"><span class="toc-text">一.垂直对齐方式：vertical-align</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E8%BF%87%E5%BA%A6%E5%B1%9E%E6%80%A7%EF%BC%9A-transition"><span class="toc-text">二.过度属性： transition</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E9%80%8F%E6%98%8E%E5%BA%A6-opacity"><span class="toc-text">三.透明度 opacity</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B-%E5%85%89%E6%A0%87%E5%B1%9E%E6%80%A7cursor"><span class="toc-text">四. 光标属性cursor</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%9E%82%E7%9B%B4%E5%AF%B9%E9%BD%90%E6%96%B9%E5%BC%8F%EF%BC%9Avertical-align"><span class="toc-text">一.垂直对齐方式：vertical-align</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E8%BF%87%E5%BA%A6%E5%B1%9E%E6%80%A7%EF%BC%9A-transition"><span class="toc-text">二.过度属性： transition</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E9%80%8F%E6%98%8E%E5%BA%A6-opacity"><span class="toc-text">三.透明度 opacity</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B-%E5%85%89%E6%A0%87%E5%B1%9E%E6%80%A7cursor"><span class="toc-text">四. 光标属性cursor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94-overflow-%E9%9A%90%E8%97%8F%E8%B6%85%E5%87%BA%E5%85%83%E7%B4%A0%E7%9B%92%E5%AD%90%E8%8C%83%E5%9B%B4%E7%9A%84%E5%86%85%E5%AE%B9"><span class="toc-text">五. overflow:隐藏超出元素盒子范围的内容</span></a></li></ol>
   </div>
 </section>
 
@@ -3620,7 +3637,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"个人博客","url":"https://www.zuopanqiang.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"ZPQ","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zuopanqiang.com/","sameAs":["https://github.com/volantis-x"],"description":"这是ZPQ的个人博客\t"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.zuopanqiang.com/","name":"个人博客"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.zuopanqiang.com/categories/前端/","name":"前端"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.zuopanqiang.com/categories/前端/CSS/","name":"CSS"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.zuopanqiang.com/2025/06/07/CSS修饰属性/","name":"CSS修饰属性"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"个人博客","url":"https://www.zuopanqiang.com/","keywords":null,"description":"这是ZPQ的个人博客\t","author":{"@type":"Person","name":"ZPQ","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zuopanqiang.com/","description":"这是ZPQ的个人博客\t"},"publisher":{"@type":"Organization","name":"个人博客","url":"https://www.zuopanqiang.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://www.zuopanqiang.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"CSS修饰属性","description":"这是ZPQ的个人博客\t","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.zuopanqiang.com/2025/06/07/CSS%E4%BF%AE%E9%A5%B0%E5%B1%9E%E6%80%A7/"},"author":{"@type":"Person","name":"ZPQ","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zuopanqiang.com/"},"publisher":{"@type":"Organization","name":"个人博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.zuopanqiang.com/2025/06/07/CSS%E4%BF%AE%E9%A5%B0%E5%B1%9E%E6%80%A7/","wordCount":0,"datePublished":"2025-06-07T11:29:11.000Z","dateModified":"2025-06-07T13:31:09.854Z","articleSection":"前端","keywords":"CSS修饰属性","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"个人博客","url":"https://www.zuopanqiang.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"ZPQ","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zuopanqiang.com/","sameAs":["https://github.com/volantis-x"],"description":"这是ZPQ的个人博客\t"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.zuopanqiang.com/","name":"个人博客"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.zuopanqiang.com/categories/前端/","name":"前端"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.zuopanqiang.com/categories/前端/CSS/","name":"CSS"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.zuopanqiang.com/2025/06/07/CSS修饰属性/","name":"CSS修饰属性"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"个人博客","url":"https://www.zuopanqiang.com/","keywords":null,"description":"这是ZPQ的个人博客\t","author":{"@type":"Person","name":"ZPQ","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zuopanqiang.com/","description":"这是ZPQ的个人博客\t"},"publisher":{"@type":"Organization","name":"个人博客","url":"https://www.zuopanqiang.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://www.zuopanqiang.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"CSS修饰属性","description":"这是ZPQ的个人博客\t","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.zuopanqiang.com/2025/06/07/CSS%E4%BF%AE%E9%A5%B0%E5%B1%9E%E6%80%A7/"},"author":{"@type":"Person","name":"ZPQ","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.zuopanqiang.com/"},"publisher":{"@type":"Organization","name":"个人博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.zuopanqiang.com/2025/06/07/CSS%E4%BF%AE%E9%A5%B0%E5%B1%9E%E6%80%A7/","wordCount":0,"datePublished":"2025-06-07T11:29:11.000Z","dateModified":"2025-06-12T13:37:02.594Z","articleSection":"前端","keywords":"CSS修饰属性","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
